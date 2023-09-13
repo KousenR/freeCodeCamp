@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+  <head>
+    <title>William's Survey Form
+      </title>
+    </head>
+    <body>
+      <h1 id="title">William's Video Game Survey</h1>
+      <p id="description">A quick survey to gather information on your favorite video game</p>
+      <form id="survey-form">
+
+        <div class="form-group">
+          <label id="game-label" for="game">Favorite Game</label>
+          <input id="game" type="text" required placeholder="Name of your favorite game">
+        </div>
+
+        <div class="form-group">
+          <label id="time-label" for="time">Hours played</label>
+          <input id="time" type="number" required min="0" max="9999">
+        </div>
+
+        <div class="form-group">
+          <label id="recom-label" for="recom">Would you recommend this game? </label>
+          <select id="recom">
+          <option>Yes</option>
+          <option>No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Single or Multiplayer</p>
+          <label>
+            <input name="single-multi" value="single" type="radio" class="inline"/>Single Player</label>
+          <label>
+            <input name="single-multi" value="multiplayer" type="radio" class="inline"/>Multiplayer</label>
+        </div>
+
+        <div class="form-group">
+          <p>What is the genre(s) of the game?</p>
+          <label>
+            <input type="checkbox" value="action" class="inline">Action</label>
+          <label>
+            <input type="checkbox" value="adventure" class="inline">Adventure</label>
+          <label>
+            <input type="checkbox" value="fighting" class="inline">Fighting</label>
+          <label>
+            <input type="checkbox" value="horror" class="inline">Horror</label>
+          <label>
+            <input type="checkbox" value="platformer" class="inline">Platformer</label>
+          <label>
+            <input type="checkbox" value="puzzle" class="inline">Puzzle</label>
+          <label>
+            <input type="checkbox" value="racing" class="inline">Racing</label>
+          <label>
+            <input type="checkbox" value="rpg" class="inline">Role-playing(RPG)</label>
+          <label>
+            <input type="checkbox" value="simulation" class="inline">Simulation</label>
+          <label>
+            <input type="checkbox" value="sports" class="inline">Sports</label>
+        </div>
+          
+        <div class="form-group">
+          <p>Additional information/comments</p>
+          <textarea id="addCom" name="bio" rows="3" cols="30" placeholder="Description of the game, why this game is your favorite, and anything else"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" required placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="text" required placeholder="Your email">
+        </div>
+
+        <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+        </form>
+    </body>
+  </html>
